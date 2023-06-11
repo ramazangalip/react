@@ -15,7 +15,7 @@ import {
  
 } from 'reactstrap';
 
-function Navi() {
+function Navi(props) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
@@ -37,7 +37,7 @@ function Navi() {
             </NavItem>
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
-                Options -  {this.props.cart.length}
+                Options - {props.cart.length}
               </DropdownToggle>
               <DropdownMenu right>
                 <DropdownItem>Option 1</DropdownItem>

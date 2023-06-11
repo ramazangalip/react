@@ -26,12 +26,16 @@ export default class App extends Component {
   };
   addToCart=(product)=>{
     let newCart = this.state.cart;
-   // var addedItem = newCart.find(c=>c.product.id === product.id);
-   newCart.push({product:product,quantity:1});
-   this.setState({cart:newCart});
+    var addedItem = newCart.find(c=>c.product.id === product.id);
+    if(addedItem){
+      addedItem.quantity+=1;
    
-   this.setState({cart:newCart});
+  }else{
+    newCart.push({product:product,quantity:1});
   }
+  
+  this.setState({cart:newCart});
+}
 
   render() {
     let productInfo = { title: "ProductList" };
@@ -63,3 +67,4 @@ export default class App extends Component {
     );
   }
 }
+

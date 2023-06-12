@@ -7,13 +7,15 @@ import {
   Nav,
   NavItem,
   NavLink,
+  NavbarText,
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
-  NavbarText,
+
  
 } from 'reactstrap';
+
 
 function Navi(props) {
   const [isOpen, setIsOpen] = useState(false);

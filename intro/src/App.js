@@ -43,7 +43,7 @@ export default class App extends Component {
     return (
       <div>
         <Container>
-          <Navi  cart={this.state.cart}   />
+          <Navi cart={this.state.cart}/>
 
           <Row>
             <Col xs="3">

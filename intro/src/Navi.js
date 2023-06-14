@@ -39,11 +39,12 @@ function Navi(props) {
             </NavItem>
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
-                Options - {props.cart.length}
+               SEPET- {props.cart.length}
               </DropdownToggle>
               <DropdownMenu right>
-                <DropdownItem>Option 1</DropdownItem>
-                <DropdownItem>Option 2</DropdownItem>
+                <DropdownItem>Options 1</DropdownItem>
+                <DropdownItem>Options 2</DropdownItem>
+                
                 <DropdownItem divider />
                 <DropdownItem>Reset</DropdownItem>
               </DropdownMenu>
